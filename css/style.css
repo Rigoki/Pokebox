@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Poke;
+    src: url(../font/Pokemon_Solid.ttf);
+}
+iframe {
+     border: solid black 1px;
+     border-radius: 50%;
+
+}
+
+h1 {
+    font-family: Poke;
+    color: red;
+    text-shadow: black 3px 3px 2px;
+}
+
+header {
+    background: url("../img/bg.jpg");
+    color: white;
+    text-shadow: black 2px 2px 1px;
+}
+
+header .btn {
+    border: solid white 1px;
+    margin-left: 1em;
+}
+
+#galerie {
+    border: white solid 4px;
+    height: 80vh;
+    overflow: auto;
+}
+
+#galerie img {
+    box-shadow: black 5px 5px 2px;
+}
+
+body {
+    background: #ed1e24;
+    ;
+}
+
+#main {
+    border: white solid 1px;
+    border-bottom: none;
+    padding: 1em;
+    Color: white;
+    text-shadow: black 2px 1px 1px;
+}
+
+img {
+    background: white;
+}
+
+#pok img {
+    border: #444 double 8px;
+    box-shadow: black 5px 5px 2px;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+#pok p {
+    font-size: 2.4em;
+}
+
+#home {
+    margin-top: 5.3em;
+}
+
+@media screen and (max-width: 768px) {
+    #galerie {
+        height: 100%;
+    }
+    #galerie img {
+        width: 90%;
+    }
+}
