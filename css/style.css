@@ -3,12 +3,14 @@
     src: url(../font/Pokemon_Solid.ttf);
 }
 iframe {
+    cursor: not-allowed;
      border: solid black 1px;
      border-radius: 50%;
 
 }
 
 #easter img {max-width: 30px;
+    cursor : pointer;
     margin-right: 1em;
 background-color: transparent;}   
 
@@ -36,6 +38,7 @@ header .btn {
 }
 
 #galerie img {
+    cursor : pointer;
     box-shadow: black 5px 5px 2px;
 }
 
