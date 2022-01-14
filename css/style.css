@@ -2,17 +2,13 @@
     font-family: Poke;
     src: url(../font/Pokemon_Solid.ttf);
 }
-iframe {
-    cursor: not-allowed;
-     border: solid black 1px;
-     border-radius: 50%;
 
-}
-
-#easter img {max-width: 30px;
-    cursor : pointer;
+#easter img {
+    max-width: 30px;
+    cursor: pointer;
     margin-right: 1em;
-background-color: transparent;}   
+    background-color: transparent;
+}
 
 h1 {
     font-family: Poke;
@@ -38,7 +34,7 @@ header .btn {
 }
 
 #galerie img {
-    cursor : pointer;
+    cursor: pointer;
     box-shadow: black 5px 5px 2px;
 }
 
@@ -74,6 +70,20 @@ h2 {
 
 #home {
     margin-top: 5.3em;
+}
+
+#troll {
+    cursor: not-allowed;
+    border-radius: 50%;
+    margin-top: 1em;
+    width: 20%;
+}
+
+#troll img {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 10vh;
 }
 
 @media screen and (max-width: 768px) {
