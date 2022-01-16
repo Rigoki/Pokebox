@@ -1,18 +1,6 @@
-let cardImg = document.getElementById("cardImg");
-let cardTxt = document.getElementById("cardTxt");
-let cardCom = document.getElementById("cardCom");
-let myGalerie = document.getElementById("galerie");
+/*JS*/
 let troll = document.getElementById("troll");
-myGalerie.addEventListener("click", function(e) {
-    if (!e.target.src) {} else {
-        let img = e.target.src;
-        cardImg.innerHTML = "<img src=" + img + " class='rounded'>";
-        let name = e.target.name;
-        cardTxt.innerHTML = "<h2> " + name + "</h2>";
-        let com = e.target.alt;
-        cardCom.innerHTML = "<p>" + com + "</p>";
-    }
-})
+
 troll.addEventListener('click', function() {
     var audio = document.getElementById("audio");
     audio.play();
@@ -22,7 +10,7 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-
+/*JQ*/
 $(function(){
 $('#feu').on({
     click: ()=> {
@@ -47,5 +35,16 @@ $('#reset').on({
         $("#galerie img").fadeTo(100,1)
     }
 })
-
+$("#galerie").on({
+click : (e) =>{
+    if (!e.target.src) {} else {
+        let name = e.target.name;
+        $("#cardTxt").hide().html("<h2> " + name + "</h2>").slideDown(400);
+        let img = e.target.src;
+        $("#cardImg").hide().html( "<img src=" + img + " class='rounded'>").fadeIn(900);
+        let com = e.target.alt;
+        $("#cardCom").hide().html("<p>" + com + "</p>").slideDown(1000);
+    }
+}
+})
 })
