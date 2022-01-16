@@ -1,17 +1,11 @@
 /*JS*/
-let troll = document.getElementById("troll");
-
-troll.addEventListener('click', function() {
-    var audio = document.getElementById("audio");
-    audio.play();
-});
-
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
 /*JQ*/
 $(function(){
+$("#troll").hide()
 $('#feu').on({
     click: ()=> {
         $("#galerie img:not('.feu')").fadeTo(100,0.4);
@@ -44,7 +38,13 @@ click : (e) =>{
         $("#cardImg").hide().html( "<img src=" + img + " class='rounded'>").fadeIn(900);
         let com = e.target.alt;
         $("#cardCom").hide().html("<p>" + com + "</p>").slideDown(1000);
+        $("#troll").show()
     }
 }
+})
+$("#troll").on({
+    click: () =>{
+        $("#audio")[0].play()
+    }
 })
 })
