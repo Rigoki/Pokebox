@@ -8,25 +8,25 @@ $(function() {
     $("#troll").hide()
     $('#feu').on({
         click: () => {
-            $("#galerie img:not('.feu')").fadeTo(100, 0.4);
-            $(".feu").fadeTo(100, 1)
+            $("#galerie img:not('.feu')").fadeTo(100, 0.4).css("pointer-events", "none");
+            $(".feu").fadeTo(100, 1).css("pointer-events", "auto")
         }
     })
     $('#plante').on({
         click: () => {
-            $("#galerie img:not('.plante')").fadeTo(100, 0.4)
-            $(".plante").fadeTo(100, 1)
+            $("#galerie img:not('.plante')").fadeTo(100, 0.4).css("pointer-events", "none")
+            $(".plante").fadeTo(100, 1).css("pointer-events", "auto")
         }
     })
     $('#eau').on({
         click: () => {
-            $("#galerie img:not('.eau')").fadeTo(100, 0.4)
-            $(".eau").fadeTo(100, 1)
+            $("#galerie img:not('.eau')").fadeTo(100, 0.4).css("pointer-events", "none")
+            $(".eau").fadeTo(100, 1).css("pointer-events", "auto")
         }
     })
     $('#reset').on({
         click: () => {
-            $("#galerie img").fadeTo(100, 1)
+            $("#galerie img").fadeTo(100, 1).css("pointer-events", "auto")
         }
     })
     $("#galerie").on({
